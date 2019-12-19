@@ -25,6 +25,7 @@
 
     <!-- Theme CSS -->
     <link href="/static/css/freelancer.min.css" rel="stylesheet">
+    <link href="/static/css/blackjack.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -51,7 +52,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> 
                 </button>
-                <a class="navbar-brand" href="#page-top">CP Flask App</a>
+                <a class="navbar-brand" href="#page-top">Portfolio Flask App</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,10 +62,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="/">About</a>
+                        <a href="/">Portfolio</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="/python_apps">Python Apps</a>
+                        <a href="/python_apps">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -80,11 +81,12 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <a href="http://tinypic.com?ref=2mniziu" target="_blank"><img class="img-responsive" src="http://i68.tinypic.com/2mniziu.jpg" border="0" width="304"height="236"></a>                                                   
+                    <a href="" target="_blank"><img class="img-responsive" src="https://i.ibb.co/Prj4Vfd/IMG-0156.jpg" border="0" width="304"height="236"></a>                                                   
                     <div class="intro-text">
-                        <h1 class="name">Hey there {{name}}!</h1>
+                        <h1 class="name">Hey there {{name}}, I'm Jackson Lintz!</h1>
                         <hr class="star-light">
-                        <span class="skills">Python Developer - Flask Framework</span>
+                        <span class="skills">Full Stack Django Python Web Developer</span>
+                        <p>I started developing my skills as a Full Stack Django Web Developer a year and a half ago. My passion for programming grows every time I sit down to code and that won’t stop until AI takes my seat… So NEVER haha! From my experience with programming thus far, I know the ins and outs of Python, Bootstrap, CSS, HTML, Javascript and all the shortcuts of Django.</p>
                     </div>
                 </div>
             </div>
@@ -103,36 +105,45 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <script src="https://anvil.works/embed.js" async></script>
-                    <iframe style="width:100%;" data-anvil-embed src="https://J5AKDNSXBPDSMEL5.anvil.app/ZRAYOHNQKF7AREDLLD7RA3IN"></iframe>
+                    <a href="https://J5AKDNSXBPDSMEL5.anvil.app/ZRAYOHNQKF7AREDLLD7RA3IN" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/portfolio/chesstastic.jpeg" target="_blank" class="img-responsive" alt="Chesstastic">
+                        <img src="https://i.ibb.co/PzKbqsz/Screen-Shot-2019-12-18-at-5-57-34-PM.png" target="_blank" class="img-responsive" alt="Chesstastic">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.cleverprogrammer.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <a href="https://jacksons-blog.herokuapp.com/" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/portfolio/cleverprogrammer.png" class="img-responsive" alt="Slice of cake">
+                        <img src="https://i.ibb.co/KXtFbY7/Screen-Shot-2019-12-14-at-3-20-45-PM.png" class="img-responsive" alt="Slice of cake">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <a href="https://jacksons-movie-app.herokuapp.com/" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/static/img/portfolio/youtubecp.png" class="img-responsive" alt="Circus tent">
+                        <img src="https://i.ibb.co/jGzRWhW/Screen-Shot-2019-12-14-at-3-33-32-PM.png" class="img-responsive" alt="Circus tent">
                     </a>
                 </div>      
+                <div class="col-sm-4 portfolio-item">
+                    <a href="https://www.tiktok.com/@jacksonlintz?utm_source=tt_1" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/https://i.ibb.co/F8dkZGZ/Screen-Shot-2019-12-16-at-4-39-39-PM.png" class="img-responsive" alt="Circus tent">
+                    </a>
+                </div>    
             </div>
         </div>
     </section>
@@ -147,11 +158,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I love the Flask Framework. I can make so many things simply by leveraging code that other people have made for me to use</p>
+                <div class="col-lg-4">
+                    <h4>My apps</h4>
+                    <p>I used the three apps above to sharpen my Python coding skills and understand fully how Django interacts with front-end and back-end code. My todo list app was entirely Python code, which was the ground work for me being able to create my other two apps with Django. The projects I created with Django allowed me to make mistakes and learn from them, which is ultimately the best and most effective way of learning a new platform or anything for that matter!</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>The languages that you see on this app are HTML, CSS, Python and some JavaScript. By using this BootStrap template I saved myself a lot of time. Instead of creating the HTML and CSS from scratch I was able to edit the template to the way I wanted it to look like.</p>
+                    <h4>My Coding Journey</h4>
+                    <p>My first ever coding experience was on Codecademy. I was really interested in Front-end development at the time so I learned HTML, CSS and a little bit of Javascript. Even though it was fun to learn these languages I knew that to be able to create something with actual functionality I had to learn a back-end language, so I decided to learn Python as my primary language and Java as my secondary language! After learning the basics to all these languages I decided to start creating projects because that’s the only way I was going to take my learning to the next level. So now, 3 big projects later, I am here hoping to start a bigger one with YOU!</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>My Company</h4>
+                    <p>I run an ecommerce company with my brothers called <a href="https//:www.highkeyco.com" style="color: #240090;">HighKey Technology Inc</a>. We sell wireless earbuds, Bluetooth speakers, backpacks and pop sockets (for your phone). I manage shipping, customer support, marketing and parts of web development within the company. I was able to make our customer support good and trust worthy in the past year by promising our customers a 24hr response via email and Instagram DMs and following through with that promise. I have also tripled our email marketing revenue in the past year by taking the time to create custom HTML and CSS templates for holiday specials and other events. Checkout our <a href="https://www.instagram.com/highkeyco/">Instagram</a>, <a href="https://www.facebook.com/Highkeyco/">Facebook</a> and <a href="https://www.youtube.com/Highkeyco/">Youtube</a></p>
                 </div>
             </div>
         </div>
@@ -168,24 +185,24 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>Chicago Illinois,
-                            <br>United States</p>
+                        <p>Winnipeg Manitoba,
+                            <br>Canada</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3></h3>
-                        <p></p>
+                        <h3>Contact Me</h3>
+                        <p>Email: 2action2jackson2@gmail.com <br> Phone: 431-777-6240</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                        <h3>Personal social media</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://www.facebook.com/CleverProgrammerr/?ref=br_rs" target="_blank" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/jackson-lintz-2a2277197/?originalSubdomain=ca" target="_blank" class="btn-social btn-outline"><span class="sr-only">Linkedin</span><i class="fa fa-fw fa-Linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ" class="btn-social btn-outline" target="_blank"><span class="sr-only">YouTube</span><i class="fa fa-fw fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/jacksonlintz/" class="btn-social btn-outline" target="_blank"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-Instagram"></i></a>
                             </li>
                             <li>
-                                <a href="https://github.com/CleverProgrammer" class="btn-social btn-outline" target="_blank"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://github.com/CleverProgrammer" class="btn-social btn-outline" target="_blank"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -197,7 +214,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Clever Programmer - CP Flask Portfolio 2017 - Created on C9
+                        Copyright &copy; Perfect Programmer - CP Flask Portfolio 2017 - Created on C9
                     </div>
                 </div>
             </div>
